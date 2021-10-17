@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".consult">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/mainf"
+        android:text="General Consultation"
+        android:textColor="#EDCD1F"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageConsult"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageConsult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/consult" />
+
+    <EditText
+        android:id="@+id/Problem"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#00C4FF"
+        android:ems="10"
+        android:hint="Eg: fever, headache"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#1C1C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageConsult"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageConsult"
+        app:layout_constraintTop_toBottomOf="@+id/imageConsult"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00C4FF"
+        android:ems="10"
+        android:hint="Whatsapp Number"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#1C1C1C"
+        app:layout_constraintEnd_toEndOf="@+id/Problem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Problem"
+        app:layout_constraintTop_toBottomOf="@+id/Problem"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/consultClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#EDCD1F"
+        android:fontFamily="@font/mainf"
+        android:text="Consult"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <ImageView
+        android:id="@+id/Subbmited"
+        android:layout_width="227dp"
+        android:layout_height="258dp"
+        android:tint="#20E824"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/submited" />
+</androidx.constraintlayout.widget.ConstraintLayout>
